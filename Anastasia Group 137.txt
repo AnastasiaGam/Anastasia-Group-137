@@ -1,1 +1,108 @@
 Hello!
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework
+$ git config --global user.name "Anastasia"
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework
+$ git config --global user.email "gamankowa@mail.ru"
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework
+$ git init
+Initialized empty Git repository in C:/Users/Я/PycharmProjects/pythonProject/Git homework/.git/
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\320\232\320\276\320\275\320\264\320\270\321\202\320\265\321\200\321\201\320\272\320\260\321\217.py"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git add .
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git commit -m "Git homework"
+[master (root-commit) 0ae9cdb] Git homework
+ 1 file changed, 33 insertions(+)
+ create mode 100644 "\320\232\320\276\320\275\320\264\320\270\321\202\320\265\321\200\321\201\320\272\320\260\321\217.py"
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git log
+commit 0ae9cdb51c927f50bebc377c66c2639b1f2ec1ee (HEAD -> master)
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 18:47:31 2022 +0300
+
+    Git homework
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git add .
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git commit -m "New: (Anastasia Group 137).txt"
+[master 14dd325] New: (Anastasia Group 137).txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Anastasia Group 137.txt
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git branch -a
+* master
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git checkout master
+Already on 'master'
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git checkout -b New branch
+fatal: 'branch' is not a commit and a branch 'New' cannot be created from it
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git checkout -b NewNew
+Switched to a new branch 'NewNew'
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git status
+On branch NewNew
+nothing to commit, working tree clean
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git add .
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git commit -m "console"
+[NewNew b4c6feb] console
+ 1 file changed, 1 insertion(+)
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git log
+commit b4c6feb71b170029b6c05d5c2d98627b8b5ffcb7 (HEAD -> NewNew)
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 19:15:49 2022 +0300
+
+    console
+
+commit 14dd32552ff851a307a8989a780ea688e3fc67dc (master)
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 18:54:15 2022 +0300
+
+    New: (Anastasia Group 137).txt
+
+commit 0ae9cdb51c927f50bebc377c66c2639b1f2ec1ee
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 18:47:31 2022 +0300
+
+    Git homework
