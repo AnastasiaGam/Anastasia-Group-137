@@ -106,3 +106,57 @@ Author: Anastasia <gamankowa@mail.ru>
 Date:   Fri Apr 22 18:47:31 2022 +0300
 
     Git homework
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git add .
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git status
+On branch NewNew
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Anastasia Group 137.txt
+
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git commit -m "merging branches"
+[NewNew 070990d] merging branches
+ 1 file changed, 108 insertions(+), 1 deletion(-)
+ rewrite Anastasia Group 137.txt (100%)
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (NewNew)
+$ git checkout master
+Switched to branch 'master'
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git merge NewNew
+Updating 14dd325..070990d
+Fast-forward
+ Anastasia Group 137.txt | 108 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 108 insertions(+)
+
+Я@DESKTOP-RDNUEJO MINGW64 ~/PycharmProjects/pythonProject/Git homework (master)
+$ git log
+commit 070990d6ca34c1cc3a9a0112c3b42eff5474c998 (HEAD -> master, NewNew)
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 19:21:02 2022 +0300
+
+    merging branches
+
+commit b4c6feb71b170029b6c05d5c2d98627b8b5ffcb7
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 19:15:49 2022 +0300
+
+    console
+
+commit 14dd32552ff851a307a8989a780ea688e3fc67dc
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 18:54:15 2022 +0300
+
+    New: (Anastasia Group 137).txt
+
+commit 0ae9cdb51c927f50bebc377c66c2639b1f2ec1ee
+Author: Anastasia <gamankowa@mail.ru>
+Date:   Fri Apr 22 18:47:31 2022 +0300
+
+    Git homework
+:
